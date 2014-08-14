@@ -1,0 +1,114 @@
+{
+    "directory": "abricos.src",
+    "groups": {
+        "core": {
+            "directory": "abricos.src"
+        },
+        "module": {
+            "directory": "abricos.src/modules"
+        },
+        "template": {
+            "directory": "abricos.src/templates"
+        },
+        "vendor": {
+            "directory": "abricos.src/vendor"
+        }
+    },
+    "dependencies": {
+        "core": {
+            "group": "core",
+            "repo": "git@github.com:abricos/abricos-core.git",
+            "version": "dev"
+        },
+        "abricos.js": {
+            "group": "vendor",
+            "repo": "git@github.com:abricos/abricos.js.git",
+            "version": "dev"
+        },
+        "blog": {
+            "group": "module",
+            "repo": "git@github.com:abricos/abricos-mod-blog.git",
+            "version": "dev"
+        },
+        "bos": {
+            "group": "module",
+            "repo": "git@github.com:abricos/abricos-mod-bos.git",
+            "version": "dev"
+        },
+        "botask": {
+            "group": "module",
+            "repo": "git@github.com:abricos/abricos-mod-botask.git",
+            "version": "dev"
+        },
+        "comment": {
+            "group": "module",
+            "repo": "git@github.com:abricos/abricos-mod-comment.git",
+            "version": "dev"
+        },
+        "chart": {
+            "group": "module",
+            "repo": "git@github.com:abricos/abricos-mod-chart.git",
+            "version": "dev"
+        },
+        "filemanager": {
+            "group": "module",
+            "repo": "git@github.com:abricos/abricos-mod-filemanager.git",
+            "version": "dev"
+        },
+        "money": {
+            "group": "module",
+            "repo": "git@github.com:abricos/abricos-mod-money.git",
+            "version": "dev"
+        },
+        "notify": {
+            "group": "module",
+            "repo": "git@github.com:abricos/abricos-mod-notify.git",
+            "version": "dev"
+        },
+        "rss": {
+            "group": "module",
+            "repo": "git@github.com:abricos/abricos-mod-rss.git",
+            "version": "dev"
+        },
+        "sitemap": {
+            "group": "module",
+            "repo": "git@github.com:abricos/abricos-mod-sitemap.git",
+            "version": "dev"
+        },
+        "social": {
+            "group": "module",
+            "repo": "git@github.com:abricos/abricos-mod-social.git",
+            "version": "dev"
+        },
+        "tester": {
+            "group": "module",
+            "repo": "git@github.com:abricos/abricos-mod-tester.git",
+            "version": "master"
+        },
+        "tinymce": {
+            "group": "module",
+            "repo": "git@github.com:abricos/abricos-mod-tinymce.git",
+            "version": "dev"
+        },
+        "todolist": {
+            "group": "module",
+            "repo": "git@github.com:abricos/abricos-mod-todolist.git",
+            "version": "dev"
+        },
+        "uprofile": {
+            "group": "module",
+            "repo": "git@github.com:abricos/abricos-mod-uprofile.git",
+            "version": "dev"
+        },
+        "user": {
+            "group": "module",
+            "repo": "git@github.com:abricos/abricos-mod-user.git",
+            "version": "master"
+        },
+        "widget": {
+            "group": "module",
+            "repo": "git@github.com:abricos/abricos-mod-widget.git",
+            "version": "dev"
+        }
+    }
+}
