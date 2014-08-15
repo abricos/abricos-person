@@ -100,6 +100,11 @@
             "repo": "git@github.com:abricos/abricos-mod-uprofile.git",
             "version": "dev"
         },
+        "urating": {
+            "group": "module",
+            "repo": "git@github.com:abricos/abricos-mod-urating.git",
+            "version": "dev"
+        },
         "user": {
             "group": "module",
             "repo": "git@github.com:abricos/abricos-mod-user.git",
