@@ -59,3 +59,14 @@ grunt watch
 mk-grunt watch --filter=abricos-module-name
     ```
 
+### Update
+
+* Update project dependencies:
+
+    ```
+mk update
+    ```
+
+## License
+
+[MIT License](https://github.com/abricos/abricos-person/blob/master/LICENSE) (c) Alexander Kuzmin <roosit@abricos.org>
