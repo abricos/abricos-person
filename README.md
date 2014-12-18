@@ -1,72 +1,70 @@
 # Abricos Person
 
-Assembling Abricos Platform for personal and team needs
+Assembling Abricos Platform for personal needs
 
+## Installation
 
-## Automated tasks
+### Install Node.js and NPM
 
-Provides a set of util tasks to work with [Abricos Platform](http://github.com/abricos/abricos) project.
+[Installing Node.js via package manager](https://github.com/joyent/node/wiki/installing-node.js-via-package-manager)
 
+### Install Grunt.js
 
-### Setup
+```
+[sudo] npm install -g grunt-cli
+```
 
-1. Install [NodeJS](http://nodejs.org/download/), if you don't have it yet.
+### Install Multik.js
 
+```
+[sudo] npm install -g multik
+```
 
-2. Install global dependencies:
+All subsequent commands must be performed in the project folder (where the file is located multik.json).
 
-    ```
-[sudo] npm install -g grunt-cli multik
-    ```
+### Install other development packages
 
-3. Install local dependencies:
-
-    ```
+```
 npm install
-    ```
+```
 
-4. Install project dependencies:
+### Loading dependent
 
-    ```
+Loading the core and all the necessary dependent modules and third-party libraries
+
+```
 mk install
-    ```
+```
 
-5. Initialize project dependencies:
+*Note: If there is an error in Ubuntu: /usr/bin/env: node: No such file or directory, then run command:*
 
-    ```
+```
+sudo ln -s /usr/bin/nodejs /usr/bin/node
+```
+
+### Setting config.php
+
+```
+mkdir ./src/includes
+```
+
+```
+cp ./abricos.src/core/src/includes/config.example.php ./src/includes/config.php
+```
+
+```
+gedit ./src/config.php
+```
+
+
+### Initialize dependent
+
+```
 mk-grunt init
-    ```
+```
 
-### Build
+### Build the project
 
-* Build core, modules, vendors and over dependencies:
-
-    ```
+```
 mk-grunt build
-    ```
-
-### Watch
-
-* Watch and build for any changes:
-
-    ```
-grunt watch
-    ```
-
-* Watch and build for any single module changes:
-
-    ```
-mk-grunt watch --filter=abricos-module-name
-    ```
-
-### Update
-
-* Update project dependencies:
-
-    ```
-mk update
-    ```
-
-## License
-
-[MIT License](https://github.com/abricos/abricos-person/blob/master/LICENSE) (c) Alexander Kuzmin <roosit@abricos.org>
+```

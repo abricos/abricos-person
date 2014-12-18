@@ -1,14 +1,21 @@
+// version 0.1.4
+
 var path = require('path');
+var fs = require('fs');
 
 var ROOT = process.cwd();
 
-var SITE_NAME = 'person';
+var BUILD_DIR = path.join(ROOT, '/build/');
 
-var BUILD_DIR = path.join(ROOT, '../deploy.www/', SITE_NAME);
+var buidConfig = require('./buildconfig.json');
 
-module.exports = function(grunt) {
+if (buidConfig && buidConfig.directory){
+    BUILD_DIR = path.join(ROOT, buidConfig.directory);
+}
 
-    if (grunt.multik) {
+module.exports = function(grunt){
+
+    if (grunt.multik){
 
         require('./lib/multik.js')(grunt, {
             'buildDir': BUILD_DIR
@@ -16,19 +23,29 @@ module.exports = function(grunt) {
 
     } else {
 
-        grunt.initConfig({
-            abtemplate: {
-                build: {
+        var tplTaskKeys = [], tplTasks = {},
+            tpsDir = path.join(ROOT, 'templates');
+
+        if (grunt.file.isDir(tpsDir)){
+            var dirs = fs.readdirSync(tpsDir);
+            for (var i = 0; i < dirs.length; i++){
+                var dir = dirs[i], key = 'build' + i;
+                tplTaskKeys[tplTaskKeys.length] = 'abtemplate:' + key
+                tplTasks[key] = {
                     options: {
-                        directory: path.join('templates', SITE_NAME),
-                        buildDir: path.join(BUILD_DIR, 'tt', SITE_NAME),
+                        directory: path.join('templates', dir),
+                        buildDir: path.join(BUILD_DIR, 'tt', dir),
                         cleanBuildDir: false
                     }
-                }
-            },
+                };
+            }
+        }
+
+        var tasks = {
             copy: {
                 src: {
-                    files: [{
+                    files: [
+                        {
                             expand: true,
                             cwd: 'src',
                             src: [
@@ -46,14 +63,31 @@ module.exports = function(grunt) {
                     'templates/**/*'
                 ],
                 tasks: ['build']
+            },
+            clean: {
+                buildinst: path.join(BUILD_DIR, 'includes', 'config.php')
             }
-        });
+        };
+
+        if (tplTaskKeys.length > 0){
+            tasks['abtemplate'] = tplTasks;
+        }
+
+        grunt.initConfig(tasks);
 
         grunt.registerTask('init', []);
-        grunt.registerTask('build', ['abtemplate:build', 'copy:src']);
+
+        tplTaskKeys[tplTaskKeys.length] = 'copy:src';
+        grunt.registerTask('build', tplTaskKeys);
+
+        tplTaskKeys = grunt.util.toArray(tplTaskKeys);
+
+        tplTaskKeys[tplTaskKeys.length] = 'clean:buildinst';
+        grunt.registerTask('buildinst', tplTaskKeys);
     }
 
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-abricos');
 
