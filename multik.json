@@ -46,7 +46,7 @@
         "money": {
             "group": "module",
             "repo": "https://github.com/abricos/abricos-mod-money.git",
-            "version": "master"
+            "version": "dev"
         },
         "notify": {
             "group": "module",
