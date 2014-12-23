@@ -3,8 +3,7 @@
 /build_temp
 /release
 /node_modules
-/multik_modules
 /bower_components
 /abricos.src
-buildconfig.json
+abricos-grunt.json
 config.php
