@@ -76,7 +76,7 @@
         "user": {
             "group": "module",
             "repo": "https://github.com/abricos/abricos-mod-user.git",
-            "version": "master"
+            "version": "dev"
         },
         "widget": {
             "group": "module",
