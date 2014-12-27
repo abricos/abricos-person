@@ -21,7 +21,7 @@
         "core": {
             "group": "core",
             "repo": "https://github.com/abricos/abricos-core.git",
-            "version": "master"
+            "version": "0.6.0"
         },
         "install": {
             "group": "installer",
@@ -36,52 +36,52 @@
         "bos": {
             "group": "module",
             "repo": "https://github.com/abricos/abricos-mod-bos.git",
-            "version": "master"
+            "version": "core-0.6.0"
         },
         "filemanager": {
             "group": "module",
             "repo": "https://github.com/abricos/abricos-mod-filemanager.git",
-            "version": "master"
+            "version": "core-0.6.0"
         },
         "money": {
             "group": "module",
             "repo": "https://github.com/abricos/abricos-mod-money.git",
-            "version": "dev"
+            "version": "core-0.6.0"
         },
         "notify": {
             "group": "module",
             "repo": "https://github.com/abricos/abricos-mod-notify.git",
-            "version": "master"
+            "version": "core-0.6.0"
         },
         "sitemap": {
             "group": "module",
             "repo": "https://github.com/abricos/abricos-mod-sitemap.git",
-            "version": "master"
+            "version": "core-0.6.0"
         },
         "tinymce": {
             "group": "module",
             "repo": "https://github.com/abricos/abricos-mod-tinymce.git",
-            "version": "master"
+            "version": "core-0.6.0"
         },
         "todolist": {
             "group": "module",
             "repo": "https://github.com/abricos/abricos-mod-todolist.git",
-            "version": "master"
+            "version": "core-0.6.0"
         },
         "uprofile": {
             "group": "module",
             "repo": "https://github.com/abricos/abricos-mod-uprofile.git",
-            "version": "master"
+            "version": "core-0.6.0"
         },
         "user": {
             "group": "module",
             "repo": "https://github.com/abricos/abricos-mod-user.git",
-            "version": "dev"
+            "version": "core-0.6.0"
         },
         "widget": {
             "group": "module",
             "repo": "https://github.com/abricos/abricos-mod-widget.git",
-            "version": "master"
+            "version": "core-0.6.0"
         }
     }
 }
