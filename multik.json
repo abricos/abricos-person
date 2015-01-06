@@ -12,9 +12,6 @@
         },
         "template": {
             "directory": "abricos.src/templates"
-        },
-        "vendor": {
-            "directory": "abricos.src/vendor"
         }
     },
     "dependencies": {
@@ -28,10 +25,10 @@
             "repo": "https://github.com/abricos/abricos-installer.git",
             "version": "master"
         },
-        "abricos.js": {
-            "group": "vendor",
-            "repo": "https://github.com/abricos/abricos.js.git",
-            "version": "master"
+        "eshoptp": {
+            "group": "template",
+            "repo": "https://github.com/abricos/abricos-tpl-eshoptp.git",
+            "version": "core-0.6.0"
         },
         "bos": {
             "group": "module",
