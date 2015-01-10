@@ -4,6 +4,7 @@ $config['phrase']['sys'] = array(
     "site_name" => "Abricos Person"
 );
 
+return;
 $config['Template'] = array(
     // по умолчанию использовать шаблон blog из стиля default
     "default" => array(
