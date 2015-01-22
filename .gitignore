@@ -5,5 +5,6 @@
 /node_modules
 /bower_components
 /abricos.src
+/sent-emails
 myabricos.json
 config.php
