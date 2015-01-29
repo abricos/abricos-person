@@ -13,6 +13,7 @@
     "url": "https://github.com/abricos/abricos-person.git"
   },
   "devDependencies": {
+    "async": "^0.9.0",
     "grunt": "~0.4.5",
     "grunt-abricos": "~0.1.7",
     "should": "^4.5.0"
