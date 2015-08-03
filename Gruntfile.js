@@ -1,17 +1,15 @@
-// version 0.1.4
+// version 0.2.1
 
 var path = require('path');
 var fs = require('fs');
 
 var ROOT = process.cwd();
 
-var BUILD_DIR = path.join(ROOT, '/build/');
+var pkg = require('./package.json');
 
-var buidConfig = require('./buildconfig.json');
+var SITE_NAME = pkg.name;
 
-if (buidConfig && buidConfig.directory){
-    BUILD_DIR = path.join(ROOT, buidConfig.directory);
-}
+var BUILD_DIR = path.join(ROOT, '../deploy.www/', SITE_NAME);
 
 module.exports = function(grunt){
 
