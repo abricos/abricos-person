@@ -21,7 +21,7 @@
         "core": {
             "group": "core",
             "repo": "https://github.com/abricos/abricos-core.git",
-            "version": "master"
+            "version": "core-0.5.7"
         },
         "install": {
             "group": "installer",
