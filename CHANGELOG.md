@@ -3,6 +3,8 @@
 ### 0.1.1
 
 - add Tag module
+- add Note module
+- add Bostick module
 
 #### Money Module
 
