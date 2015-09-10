@@ -86,7 +86,7 @@
         "uprofile": {
             "group": "module",
             "repo": "https://github.com/abricos/abricos-mod-uprofile.git",
-            "version": "master"
+            "version": "0.1.6"
         },
         "user": {
             "group": "module",
