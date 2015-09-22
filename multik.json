@@ -66,7 +66,7 @@
         "sitemap": {
             "group": "module",
             "repo": "https://github.com/abricos/abricos-mod-sitemap.git",
-            "version": "master"
+            "version": "0.2.7"
         },
         "tag": {
             "group": "module",
@@ -76,7 +76,7 @@
         "tinymce": {
             "group": "module",
             "repo": "https://github.com/abricos/abricos-mod-tinymce.git",
-            "version": "master"
+            "version": "0.1.7"
         },
         "todolist": {
             "group": "module",
