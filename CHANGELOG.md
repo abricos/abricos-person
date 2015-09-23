@@ -5,6 +5,7 @@
 - add Tag module
 - add Note module
 - add Bostick module
+- update by new version UProfile module
 
 #### Money Module
 
