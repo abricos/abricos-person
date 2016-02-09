@@ -45,7 +45,7 @@
     },
     "chart": {
       "group": "module",
-      "repo": "https://github.com/abricos/abricos-mod-master.git",
+      "repo": "https://github.com/abricos/abricos-mod-chart.git",
       "version": "0.1.2"
     },
     "filemanager": {
