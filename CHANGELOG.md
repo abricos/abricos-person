@@ -1,5 +1,10 @@
 # Changelog
 
+### 0.1.2
+
+- add Botask module
+- add Pictab module
+
 ### 0.1.1
 
 - add Tag module
