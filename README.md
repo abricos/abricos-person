@@ -68,3 +68,9 @@ mk-grunt init
 ```
 mk-grunt build
 ```
+
+### Build distributive
+
+```
+mk-grunt buildinst
+```
