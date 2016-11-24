@@ -1,9 +1,14 @@
 # Changelog
 
+
+### 0.1.3
+
+- update repos branche (multik.json)
+- add Pictab module
+
 ### 0.1.2
 
 - add Botask module
-- add Pictab module
 
 ### 0.1.1
 
